@@ -2,7 +2,7 @@
 title: Your Site Title
 description: A short description of your site.
 baseurl: "" # Leave this empty for the root directory, or specify a sub-directory
-url: "https://username.github.io/repository-name" # Change 'username' and 'repository-name' accordingly
+url: "https://cicihuang0000.github.io/nongreedytrees/" # Change 'username' and 'repository-name' accordingly
 
 # Theme settings
 theme: jekyll-theme-minimal
