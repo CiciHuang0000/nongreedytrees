@@ -14,11 +14,11 @@ This paper focuses on binary classification trees with $m$ split nodes. An input
 After setting up the split function, we get that the conditional probability distribution $p=(y=l|j)$ over class labels $l \in {1,...,k}$ is:
 parametrized with a vector of unnormalized predictive log-probabilities,$\mathbf{\theta}_j \in \mathbb{R}^k$ and a softmax function:
 
-$p(y = l \mid j) = \frac{\exp \left\{ \theta_{j[l]} \right\}}{\sum_{\alpha = 1}^{k} \exp \left\{ \theta_{j[\alpha]} \right\}}$
+$$p(y = l \mid j) = \frac{\exp\left\{ \theta_{j[l]} \right\}}{\sum_{\alpha = 1}^{k} \exp \left\{ \theta_{j[\alpha]} \right\}}$$
 
 
 
-where $\mathbf{\theta}_{j[\alphda]}$ denotes the $\alpha_th$ element of vector $\mathbf{\theta}_j$
+where $\mathbf{\theta}_{j[\alpha]}$ denotes the $\alpha_th$ element of vector $\mathbf{\theta}_j$
 
 Therefore, we get our weight matrix to be $W \in \mathbb{R}^{m \times p}$ and unnormalized log-probabilities matrix to be $\Theta \in \mathbb{R}^{(m+1) \times k}$ whose rows comprise weight vectors nd leaf parameters. 
 
