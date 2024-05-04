@@ -5,7 +5,7 @@ baseurl: "" # Leave this empty for the root directory, or specify a sub-director
 url: "https://cicihuang0000.github.io/nongreedytrees/" # Change 'username' and 'repository-name' accordingly
 
 # Theme settings
-theme: jekyll-theme-Cayman
+theme: jekyll-theme-cayman
 
 # Optional settings
 # These are some optional settings that you can adjust as needed:
