@@ -12,9 +12,9 @@ Decision trees recently have increased their popularity owing to their computati
 This paper focuses on binary classification trees with $m$ split nodes. An input $x \in \mathbb{R}^p$ is directed from the root of the tree. Each internal $m$ node, indexed by $i in {1,...,m}$ performs a binary test by evaluating a node-specific split function $s_i(x): \mathbb{R} \rightarrow {-1, +1}$. That is, if $s_i(x)$ evaluates to -1, then x is directed to the left child of node $i$. Otherwise, $x$ is directed to the right child. Each split function is parameterized by a weight vector $w_i$ which is a linear threshold function $s_i(x) = sgn(\mathbf{w}_i^T \mathbf{x})$. They also incorporated an offset parameter to obtain slit functions $sgn(\mathbf{w}_i^T\mathbf{x}-b_i)$.
 
 After setting up the split function, we get that the conditional probability distribution $p=(y=l|j)$ over class labels $l \in {1,...,k}$ is:
-parametrized with a vector of unnormalized predictive log-probabilities,$\mathbf{\theta}_j \in \mathbb{R}^k$ and a softmax function:
+parametrized with a vector of unnormalized predictive log-probabilities, $\mathbf{\theta}_j \in \mathbb{R} ^k$ and a softmax function:
 
-$$p(y = l\midj) = \frac{\exp \{\theta_{j[l]}}}{sum_{\alpha = 1}^{k}exp{ \theta_{j[\alpha]}}}$$
+$$p(y = l| j) = \frac{\exp \{\theta_{j[l]}}}{\sum_{\alpha = 1}^{k}  exp{ \theta_{j[\alpha]}}}$$
 
 
 
