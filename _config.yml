@@ -1,0 +1,41 @@
+# Site settings
+title: Your Site Title
+description: A short description of your site.
+baseurl: "" # Leave this empty for the root directory, or specify a sub-directory
+url: "https://username.github.io/repository-name" # Change 'username' and 'repository-name' accordingly
+
+# Theme settings
+theme: jekyll-theme-minimal
+
+# Optional settings
+# These are some optional settings that you can adjust as needed:
+author:
+  name: Your Name
+  email: your-email@example.com
+  twitter_username: your_twitter_handle
+  github_username: your_github_username
+
+# Markdown processor
+markdown: kramdown
+
+# Enable Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files/folders from the final build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Additional navigation links (optional)
+# You can add additional navigation links to your site's header or footer
+# by providing a list of links. Adjust the URLs and labels as needed.
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
