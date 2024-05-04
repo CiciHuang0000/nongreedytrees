@@ -15,7 +15,7 @@ After setting up the split function, we get that the conditional probability dis
 parametrized with a vector of unnormalized predictive log-probabilities,$\mathbf{\theta}_j \in \mathbb{R}^k$ and a softmax function:
 
 \[
-p(y = l \mid j) = \frac{\exp \left\{ \theta_{j[l]} \right\}}{\sum_{\alpha = 1}^{k} \exp \left\{ \theta_{j[\alpha]} \right\}},
+p(y = l \mid j) = \frac{\exp \left\{ \theta_{j[l]} \right\}}{\sum_{\alpha = 1}^{k} \exp \left\{ \theta_{j[\alpha]} \right\}}
 \]
 
 
