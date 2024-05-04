@@ -20,7 +20,7 @@ $$
 
 where $\mathbf{\theta}_{j[\alphda]}$ denotes the $\alpha_th$ element of vector $\mathbf{\theta}_j$
 
-Therefore, we get our weight matrix to be $W \in \mathbb{R}^{m \times p}$ and unnormalized log-probabilities matrix to be $\Theta \in \mathbb{R}^{(m+1) \times k$ whose rows comprise weight vectors nd leaf parameters. 
+Therefore, we get our weight matrix to be $W \in \mathbb{R}^{m \times p}$ and unnormalized log-probabilities matrix to be $\Theta \in \mathbb{R}^{(m+1) \times k}$ whose rows comprise weight vectors nd leaf parameters. 
 
 ## Algorithm
 
