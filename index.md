@@ -48,10 +48,10 @@ So how can we evaluate the loss? One key idea here is to establish a link betwee
 
 **Challenge in Directly Optimizing Empirical Loss**
 
-Using the notations, we define $\mathbf{\theta} = \Theta^T f(\text{sgn}(Wx))$ to represent the parameters corresponding to the leaf to which $x$ is directed by the split functions in $W$. A natural choice for the loss function would be the squared loss in regression, which is defined as $l(\mathbf{\theta},y) = |\mathbf{\theta} - y|^2$. Given a training set $D$, we try to minimize:
+Using the notations, we define $\mathbf{\theta} = \Theta^T f(\text{sgn}(W\mathbf{x}))$ to represent the parameters corresponding to the leaf to which $\mathbf{x}$ is directed by the split functions in $\mathbf{W}$. A natural choice for the loss function would be the squared loss in regression, which is defined as $l(\mathbf{\theta}, y) = (\mathbf{\theta} - y)^2$. Given a training set $\mathbf{D}$, we try to minimize:
 
 $$
-L(W, \Theta, D) = \sum_{(x,y) \in D} l(\Theta^T f (\text{sgn}(Wx)),y)
+L(\mathbf{W}, \Theta, \mathbf{D}) = \sum_{(\mathbf{x},y) \in \mathbf{D}} l(\Theta^T f (\text{sgn}(\mathbf{Wx})),y)
 $$
 
 However, direct global optimization of this empirical loss is challenging. 
