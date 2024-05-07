@@ -52,15 +52,22 @@ However, direct global optimization of this empirical loss is challenging.
 
 ## Experiments
 
-The experiments in this paper were conducted on multiple benchmark datasets from the LibSVM collection, specifically focusing on the SensIT, Connect4, Protein, and MNIST datasets. The methodology involved dividing each dataset into different subsets for training, validation, and testing. The paper compares the proposed non-greedy learning algorithm for decision trees against several baseline methods. These include traditional decision trees based on information gain and OC1 trees that use coordinate descent for optimization. The non-greedy trees were also compared to the CO2 algorithm, which is an upper bound approach that constructs decision trees by selecting hyperplanes based on information gain. The depth of the trees, varying from 6 to 18, was a critical variable, controlled to assess performance impact. Each method was individually tuned for different tree depths. A notable aspect of the method is the use of a regularization parameter, \( \nu \), which controls the tightness of the margin in the trees and influences how much the trees are pruned. Smaller values of \( \nu \) result in fewer leaves by pruning more aggressively.
+The experiments in this paper were conducted on multiple benchmark datasets from the LibSVM collection, specifically focusing on the SensIT, Connect4, Protein, and MNIST datasets. The methodology involved dividing each dataset into different subsets for training, validation, and testing. The paper compares the proposed non-greedy learning algorithm for decision trees against several baseline methods. These include traditional decision trees based on information gain and OC1 trees that use coordinate descent for optimization. The non-greedy trees were also compared to the CO2 algorithm, which is an upper bound approach that constructs decision trees by selecting hyperplanes based on information gain. The depth of the trees, varying from 6 to 18, was a critical variable, controlled to assess performance impact. Each method was individually tuned for different tree depths. A notable aspect of the method is the use of a regularization parameter, $\nu$, which controls the tightness of the margin in the trees and influences how much the trees are pruned. Smaller values of $\nu$ result in fewer leaves by pruning more aggressively.
 
 **Figure 2:** Shows training and test accuracy for trees with different depths, highlighting the performance of non-greedy trees compared to baselines.
+
 ** inset figure**
-**Figure 3:** Illustrates the impact of the regularization parameter on tree structure, useful for understanding how parameter \( \nu \) affects pruning.
+
+**Figure 3:** Illustrates the impact of the regularization parameter on tree structure, useful for understanding how parameter $\nu$ affects pruning.
+
 ** inset figure**
+
 **Figure 4:** Compares the training time required for Connect4 dataset using different inference methods, demonstrating efficiency gains.
+
 ** inset figure**
+
 These results collectively emphasize the efficacy of non-greedy optimization in building decision trees that not only perform better but also are more efficient in terms of computational resources and time.
+
 
 ## Conclusion
 
