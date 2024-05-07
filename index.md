@@ -28,10 +28,10 @@ The paper focuses on binary classification trees as structures with internal nod
 
 The tree has $m$ internal nodes and $m+1$ leaf nodes. An input $x \in \mathbb{R}^p$ is directed from the root of the tree. Each internal $m$ node, indexed by $i \in \{1,...,m\}$, performs a binary test by evaluating a node-specific split function $s_i(x): \mathbb{R} \rightarrow \{-1, +1\}$. That is, if $s_i(x)$ evaluates to -1, then $x$ is directed to the left child of node $i$. Otherwise, $x$ is directed to the right child. The split function uses linear threshold functions and is defined as $\text{sgn}(\mathbf{w}_i^T \mathbf{x} - b_i)$, where $\mathbf{w}_i$ is a weight vector.
 
-Then each leaf node, indexed by $j \in \{1,...,m+1\}$, specifies a conditional probability distribution $p(y = l | j)$ over class labels $l \in \{1,...,k\}$. It's parametrized with a vector of unnormalized predictive log-probabilities, $\mathbf{\theta}_j \in \mathbb{R}^k$ and a softmax function:
+Then each leaf node, indexed by $j \in \{1, \ldots, m+1\}$, specifies a conditional probability distribution $p(y = l \mid j)$ over class labels $l \in \{1, \ldots, k\}$. It's parametrized with a vector of unnormalized predictive log-probabilities, $\mathbf{\theta}_j \in \mathbb{R}^k$ and a softmax function:
 
 $$
-p(y = l| j) = \frac{\exp\{\theta_{j[l]}\}}{\sum_{\alpha = 1}^{k} \exp\{\theta_{j[\alpha]}\}}
+p(y = l \mid j) = \frac{\exp\{\theta_{j[l]\}}}{\sum_{\alpha = 1}^{k} \exp\{\theta_{j[\alpha]\}}}
 $$
 
 where $\theta_{j[\alpha]}$ denotes the $\alpha^{th}$ element of vector $\mathbf{\theta}_j$.
