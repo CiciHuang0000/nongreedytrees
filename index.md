@@ -63,15 +63,15 @@ The experiments in this paper were conducted on multiple benchmark datasets from
 
 **Figure 1:** Shows training and test accuracy for trees with different depths, highlighting the performance of non-greedy trees compared to baselines.
 
-![Figure 1](Screenshot 2024-05-07 at 10.12.58 AM.png)
+![Figure 1](Screenshot%202024-05-07%20at%2010.12.58%20AM.png)
 
 **Figure 2:** Illustrates the impact of the regularization parameter on tree structure, useful for understanding how parameter $\nu$ affects pruning.
 
-![Figure 2](Screenshot 2024-05-07 at 10.14.22 AM.png)
+![Figure 2](Screenshot%202024-05-07%20at%2010.14.22%20AM.png)
 
 **Figure 3:** Compares the training time required for Connect4 dataset using different inference methods, demonstrating efficiency gains.
 
-![Figure 2](Screenshot 2024-05-07 at 10.16.13 AM.png)
+![Figure 3](Screenshot%202024-05-07%20at%2010.16.13%20AM.png)
 
 These results collectively emphasize the efficacy of non-greedy optimization in building decision trees that not only perform better but also are more efficient in terms of computational resources and time.
 
