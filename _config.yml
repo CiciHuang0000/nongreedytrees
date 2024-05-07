@@ -2,5 +2,4 @@ title: Non-Greedy Decision Trees
 description: This is the introduction
 baseurl: "" # Leave this empty for the root directory, or specify a sub-directory
 url: "https://cicihuang0000.github.io/nongreedytrees/"
-
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
