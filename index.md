@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Home Page
+markdown: kramdown
 ---
+
 
 # Non-Greedy Algorithm for Decision Trees
 
