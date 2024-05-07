@@ -56,15 +56,15 @@ However, direct global optimization of this empirical loss is challenging.
 ## Experiments
 The experiments in this paper were conducted on multiple benchmark datasets from the LibSVM collection, specifically focusing on the SensIT, Connect4, Protein, and MNIST datasets. The methodology involved dividing each dataset into different subsets for training, validation, and testing. The paper compares the proposed non-greedy learning algorithm for decision trees against several baseline methods. These include traditional decision trees based on information gain and OC1 trees that use coordinate descent for optimization. The non-greedy trees were also compared to the CO2 algorithm, which is an upper bound approach that constructs decision trees by selecting hyperplanes based on information gain. The depth of the trees, varying from 6 to 18, was a critical variable, controlled to assess performance impact. Each method was individually tuned for different tree depths. A notable aspect of the method is the use of a regularization parameter, $\nu$, which controls the tightness of the margin in the trees and influences how much the trees are pruned. Smaller values of $\nu$ result in fewer leaves by pruning more aggressively.
 
-**Figure 1:** Shows training and test accuracy for trees with different depths, highlighting the performance of non-greedy trees compared to baselines.
+**1:** Shows training and test accuracy for trees with different depths, highlighting the performance of non-greedy trees compared to baselines.
 
 ![Figure 1](Screenshot%202024-05-07%20at%2010.12.58%20AM.png)
 
-**Figure 2:** Illustrates the impact of the regularization parameter on tree structure, useful for understanding how parameter $\nu$ affects pruning.
+**2:** Illustrates the impact of the regularization parameter on tree structure, useful for understanding how parameter $\nu$ affects pruning.
 
 ![Figure 2](Screenshot%202024-05-07%20at%2010.14.22%20AM.png)
 
-**Figure 3:** Compares the training time required for Connect4 dataset using different inference methods, demonstrating efficiency gains.
+**3:** Compares the training time required for Connect4 dataset using different inference methods, demonstrating efficiency gains.
 
 ![Figure 3](Screenshot%202024-05-07%20at%2010.16.13%20AM.png)
 
