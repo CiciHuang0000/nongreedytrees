@@ -4,28 +4,3 @@ baseurl: "" # Leave this empty for the root directory, or specify a sub-director
 url: "https://cicihuang0000.github.io/nongreedytrees/"
 
 theme: jekyll-theme-cayman
-
-author:
-  name: Your Name
-  email: your-email@example.com
-  twitter_username: your_twitter_handle
-  github_username: your_github_username
-
-markdown: kramdown
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-
-nav_links:
-  - title: "Home"
-    url: "/"
-  # - title: "Blog"
-  #   url: "/blog/"
-  # - title: "About"
-  #   url: "/about/"
