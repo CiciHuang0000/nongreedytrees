@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: Home Page
 ---
 
 # Non-Greedy Algorithm for Decision Trees
